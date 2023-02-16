@@ -1,0 +1,266 @@
+.App {
+  background-color: #0e1323;
+  padding: 15rem 7.3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 22% 78%;
+      grid-template-columns: 22% 78%;
+  grid-gap: 33px;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding: 81px 24px;
+  }
+}
+
+.App .MainCardContainer {
+  background-color: #1c204b;
+  border-radius: 15px;
+}
+
+.App .MainCardContainer .mainCard {
+  background-color: #5747ea;
+  padding: 30px 20px 20px 20px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer .mainCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.App .MainCardContainer .mainCard img {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 32px;
+  width: 138px;
+  height: 145px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer .mainCard img {
+    position: relative;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    width: 64px;
+    height: 72px;
+    margin-bottom: unset;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer .mainCard .report {
+    display: block;
+  }
+}
+
+.App .MainCardContainer .mainCard h6 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #bbc0ff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.App .MainCardContainer .mainCard h1 {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  line-height: 47px;
+  letter-spacing: 12px;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer .mainCard h1 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: unset;
+  }
+}
+
+.App .MainCardContainer ul {
+  list-style-type: none;
+  padding: 12px 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.App .MainCardContainer ul li {
+  color: #7078c9;
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 21px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .MainCardContainer ul li {
+    margin-bottom: unset;
+  }
+}
+
+.App .MainCardContainer ul li:nth-child(2) {
+  color: #ffffff;
+}
+
+.App .CardsBolck {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardsBolck {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.App .CardContainer {
+  border-radius: 15px;
+  padding-top: 44px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer {
+    width: unset;
+  }
+}
+
+.App .CardContainer .card {
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 30px 30px 28px 30px;
+  width: 235px;
+  height: 199px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer .card {
+    width: unset;
+    height: 122px;
+    padding: 28px 24px 20px 24px;
+  }
+}
+
+.App .CardContainer .card .flexDev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .CardContainer .card svg {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer .card .details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 155px 1fr;
+        grid-template-columns: 155px 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.App .CardContainer .card h3 {
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.App .CardContainer .card h1 {
+  font-size: 39px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 46px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer .card h1 {
+    margin: 0;
+  }
+}
+
+.App .CardContainer .card p {
+  color: #bbc0ff;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer .card p {
+    font-size: 10px;
+  }
+}
+
+.App .CardContainer .card span {
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .App .CardContainer .card span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

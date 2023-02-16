@@ -1,0 +1,187 @@
+//COLORS
+$mainColor: #1c204b;
+$PagebgColor: #0e1323;
+
+.App {
+  background-color: $PagebgColor;
+  padding: 15rem 7.3rem;
+  display: grid;
+  grid-template-columns: 22% 78%;
+  grid-gap: 33px;
+  overflow-x: scroll;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 100%;
+    padding: 81px 24px;
+  }
+
+  .MainCardContainer {
+    background-color: $mainColor;
+    border-radius: 15px;
+    .mainCard {
+      background-color: #5747ea;
+      padding: 30px 20px 20px 20px;
+      border-radius: 15px;
+      text-align: left;
+      @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      img {
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        align-self: center;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-bottom: 32px;
+        width: 138px;
+        height: 145px;
+        @media screen and (max-width: 800px) {
+          position: relative;
+          left: unset;
+          transform: unset;
+          width: 64px;
+          height: 72px;
+          margin-bottom: unset;
+          margin-right: 20px;
+        }
+      }
+      .report {
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+      }
+
+      h6 {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Rubik", sans-serif;
+        color: #bbc0ff;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: 300;
+        font-family: "Rubik", sans-serif;
+        color: #ffffff;
+        line-height: 47px;
+        letter-spacing: 12px;
+        margin: 0;
+        @media screen and (max-width: 800px) {
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: unset;
+        }
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding: 12px 32px;
+      @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      li {
+        color: #7078c9;
+        font-family: "Rubik", sans-serif;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-bottom: 21px;
+        font-size: 18px;
+        @media screen and (max-width: 800px) {
+          margin-bottom: unset;
+        }
+
+        &:nth-child(2) {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .CardsBolck {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .CardContainer {
+    border-radius: 15px;
+    padding-top: 44px;
+    @media screen and (max-width: 800px) {
+      width: unset;
+    }
+    .card {
+      background-color: $mainColor;
+      border-radius: 15px;
+      padding: 30px 30px 28px 30px;
+      width: 235px;
+      height: 199px;
+      @media screen and (max-width: 800px) {
+        width: unset;
+        height: 122px;
+        padding: 28px 24px 20px 24px;
+      }
+
+      .flexDev {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      svg {
+        margin-right: 10px;
+      }
+      .details {
+        @media screen and (max-width: 800px) {
+          display: grid;
+          grid-template-columns: 155px 1fr;
+          align-items: center;
+        }
+      }
+      h3 {
+        font-weight: 500;
+        font-family: "Rubik", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 39px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+        line-height: 46px;
+        @media screen and (max-width: 800px) {
+          margin: 0;
+        }
+      }
+
+      p {
+        color: #bbc0ff;
+        font-weight: 400;
+        font-family: "Rubik", sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 10px;
+        @media screen and (max-width: 800px) {
+          font-size: 10px;
+        }
+      }
+      span {
+        font-weight: 500;
+        font-family: "Rubik", sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
